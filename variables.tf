@@ -1,6 +1,6 @@
 variable "aws_region" {
   type        = string
-  default     = "us-east-2"
+  default     = "eu-central-1"
   description = "The ARN of the S3 bucket to use for the application."
 }
 variable "aws_s3_bucket_arn" {
