@@ -91,8 +91,8 @@ resource "aws_route_table_association" "public" {
 
 # Create an EC2 instance with Terramino Application
 resource "aws_instance" "web" {
-  ami                         = "ami-0e1a3a59369c81682" 
-  instance_type               = "t2.micro"
+  ami                         = "ami-038836fe05b2c2a15" 
+  instance_type               = "t2.nano"
   count                       = "1"
   subnet_id                   = aws_subnet.public.id
   vpc_security_group_ids      = [aws_security_group.web_sg.id]
